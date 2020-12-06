@@ -5,7 +5,9 @@
 // krav uppfylls.
 
 const huxflux = () => {
-  return // Returnera din lista med nummer här
+  // Denna funktion behöver fyllas på med logik så att den returnerar
+  // en lista med 7 unika slumpmässiga heltal mellan 1 och 35!
+  return
 }
 
 export {
