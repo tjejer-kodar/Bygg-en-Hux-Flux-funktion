@@ -1,78 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 
 html,
 body {
-    font-family: 'Roboto', sans-serif;
-    color: white;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .ball {
-    display: inline-block;
-    width: 39px;
-    height: 39px;
-    line-height: 39px;
-    font-size: 24px;
-    color: #008C23;
-    background-color: white;
-    text-align: center;
-    border: 1px solid white;
-    padding: 3px;
-    border-radius: 50%;
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  line-height: 39px;
+  font-size: 24px;
+  color: white;
+  background: radial-gradient(
+    circle at 65% 15%,
+    rgb(213, 163, 255) 1px,
+    rgb(206, 146, 255) 3%,
+    rgb(103, 8, 192) 60%,
+    rgb(186, 113, 255) 100%
+  );
+  text-align: center;
+  padding: 3px;
+  border-radius: 50%;
 }
 
 .container {
-    height: 100vh;
-    background-color: #008C23;
+  height: 100vh;
+  background-color: #252525;
 }
 
 .wrapper {
-    width: 400px;
+  width: 400px;
 }
 
 .ball-row {
-    overflow: hidden;
-    padding: 8px;
-    min-height: 57px;
-    border: 2px solid white;
-    margin-bottom: 12px;
-    border-radius: 25px;
+  overflow: hidden;
+  padding: 8px;
+  min-height: 57px;
+  border: 2px #ff57e3;
+  border-style: double;
+  margin-bottom: 12px;
 }
 .flex-center.ball-row {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .error-span {
-    color: #8c0900;
+  color: #8c0900;
 }
 
 #huxflux-button {
-    margin-right: 12px;
+  margin-right: 12px;
 }
 
 button {
-    padding: 12px;
-    border: 2px solid white;
-    border-radius: 12px;
-    color: white;
-    font-size: 15px;
-    background-color: transparent;
-    min-width: 140px;
-    user-select: none;
-    outline:none;
+  padding: 12px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(244, 41, 255, 1) 0%,
+    rgba(174, 54, 255, 1) 32%,
+    rgba(181, 48, 255, 1) 63%,
+    rgba(244, 41, 255, 1) 100%
+  );
+
+  min-width: 140px;
+  user-select: none;
+  outline: none;
 }
 
 /* Utility */
 .flex-row {
-    flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
